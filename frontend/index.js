@@ -9,9 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const stock = parseInt(document.getElementById("stock").value);
 
     const data = { nombre, precio, stock };
-    // const newFormData = new FormData(formData);
-    // console.log(newFormData);
-    // TODO: change data for FormData
 
     const response = await fetch(HOST + "/products", {
       method: "POST",
@@ -28,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if ((response.status = 201)) {
       alert("Producto agregado correctamente");
+      formData.reset();
       obtenerProductosAPI();
       return;
     }
@@ -58,10 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
 
           <div class="flex flex-col gap-3 lg:flex-row">
-              <button class="bg-amber-500 lg:w-[96px] rounded-md shadow-md p-1.5 text-white hover:scale-105 lg:hover:scale-110">
-                  Editar
+              <button class="bg-amber-500 flex justify-center items-center lg:w-[96px] rounded-md shadow-md p-1.5 text-white hover:scale-105 lg:hover:scale-110">
+                <img src="./public/icon-edit.svg" class="w-7"></img>  
+                Editar
               </button>
-              <button class="bg-red-400 rounded-md shadow-md p-1.5 text-white hover:scale-105 lg:hover:scale-110" onClick="eliminar(${product.id})">Eliminar</button>
+              <button class="bg-red-400 flex justify-center items-center rounded-md shadow-md p-1.5 text-white hover:scale-105 lg:hover:scale-110" onClick="eliminar(${product.id})">
+                <img src="./public/icon-delete.svg" class="w-7"></img>
+                Eliminar
+              </button>
           </div>
       </div>
     </li>`;

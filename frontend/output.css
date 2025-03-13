@@ -830,6 +830,9 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
   .w-7\/12 {
     width: calc(7/12 * 100%);
   }
@@ -978,9 +981,6 @@
   }
   .animate-none {
     animation: none;
-  }
-  .cursor-text {
-    cursor: text;
   }
   .touch-pinch-zoom {
     --tw-pinch-zoom: pinch-zoom;

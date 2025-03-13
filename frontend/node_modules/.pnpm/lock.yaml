@@ -11,9 +11,6 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.0.7
         version: 4.0.7
-      bootstrap-icons:
-        specifier: ^1.11.3
-        version: 1.11.3
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
@@ -138,9 +135,6 @@ packages:
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
-
-  bootstrap-icons@1.11.3:
-    resolution: {integrity: sha512-+3lpHrCw/it2/7lBL15VR0HEumaBss0+f/Lb6ZvHISn1mlK83jjFpooTLsMWbIjJMDjDjOExMsTxnXSIT4k4ww==}
 
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -559,8 +553,6 @@ snapshots:
       picomatch: 2.3.1
 
   binary-extensions@2.3.0: {}
-
-  bootstrap-icons@1.11.3: {}
 
   braces@3.0.3:
     dependencies:
