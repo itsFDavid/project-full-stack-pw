@@ -8,7 +8,7 @@
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
+<body class="bg-teal-100">
     <header class="bg-emerald-300 flex justify-center items-center p-5 shadow-md mb-7">
         <img src="public/bimbo-seeklogo.svg" alt="Bimbo" class="w-20 h-10">
         <!-- <h1 class="text-3xl ms-3 font-bold">Bimbo 🧸</h1> -->
@@ -19,18 +19,18 @@
             <h2 class="text-center font-bold">Productos</h2>
             <div class="flex flex-col">
                 <label for="nombre">Nombre</label>
-                <input type="text" name="" id="nombre" placeholder="Donitas..." class="focus:outline-2 focus:outline-teal-700  py-1.5 rounded-md">
+                <input type="text" name="" id="nombre" placeholder="Donitas..." class="focus:outline-2 focus:outline-teal-500 border-2 border-teal-50 border-b-teal-500 py-1.5 rounded-md">
             </div>
             <div class="flex flex-col">
                 <label for="precio">Precio</label>
-                <input type="text"  min="0" id="precio" placeholder="23.80" class="focus:outline-2 focus:outline-teal-700 rounded-md py-1.5">
+                <input type="text"  min="0" id="precio" placeholder="23.80" class="focus:outline-2 focus:outline-teal-500 border-2 border-teal-50 border-b-teal-500 rounded-md py-1.5">
             </div>
             <div class="flex flex-col">
                 <label for="stock">Stock</label>
-                <input type="number" min="1" id="stock" placeholder="5" class="focus:outline-2 focus:outline-teal-700 rounded-md py-1.5">
+                <input type="number" min="1" id="stock" placeholder="5" class="focus:outline-2 focus:outline-teal-500 border-2 border-teal-50 border-b-teal-500 rounded-md py-1.5">
             </div>
-            <button type="submit" class="bg-teal-300 py-1.5 rounded-md hover:bg-teal-400 hover:scale-102 focus:outline-2" id="btnSubmit" name="add">Agregar Producto</button>
-            <button type="reset" class="text-blue-400 hover:text-blue-500 underline rounded-md hover:scale-105 focus:outline-0">Limpiar campos</button>
+            <button type="submit" class="bg-teal-300 py-1.5 rounded-md hover:bg-teal-400 hover:scale-102 focus:outline-1" id="btnSubmit" name="add">Agregar Producto</button>
+            <button type="reset" class="text-blue-400 hover:text-blue-500 underline rounded-md hover:scale-105 focus:outline-none" id="btnClear">Limpiar campos</button>
         </form>
 
         <section class="bg-teal-50 w-full h-130 mb-8 px-5 pb-5 pt-o rounded-md shadow-md flex flex-col gap-4 overflow-y-auto lg:w-7/12">
