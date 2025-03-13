@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": " npx postcss css/styles.css -o output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.7",
+    "bootstrap-icons": "^1.11.3",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.7"
+  },
+  "devDependencies": {
+    "postcss-cli": "^11.0.0"
+  }
+}
