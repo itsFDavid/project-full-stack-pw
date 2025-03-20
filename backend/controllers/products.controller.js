@@ -1,4 +1,3 @@
-const { json } = require("stream/consumers");
 const { ProductService } = require("../services/product.service");
 const logger = require("../utils/logger");
 const { createProductDto, updateProductDto } = require("../utils/validateData");
